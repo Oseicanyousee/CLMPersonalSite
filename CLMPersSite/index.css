@@ -4,4 +4,97 @@ body {
 	max-width: 100%;
 	background-size: cover;
 }
-	 
+h1 {
+	display: none;
+}
+
+ul {
+	position: absolute;
+	top: auto;
+	height: 25%;
+	min-height: 128px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+	position: relative;
+	top: 50%;
+	margin-top: -64px;
+}
+
+i {
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+	position: relative;
+	float: left;
+	top: 20%;
+	margin-top: -64px;
+
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    #twitter a {
+    	background-image: url(twitter@2x.png);
+    }
+    
+    #exposure a {
+    	background-image: url(exposure@2x.png);
+    }
+    
+    #instagram a {
+    	background-image: url(instagram@2x.png);
+    }
+    
+    #dribbble a {
+    	background-image: url(dribbble@2x.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 327dpi) { 
+    #Resume {
+    	background-image: "fa fa-book";
+    }
+    
+    #exposure a {
+    	background-image: url(exposure@3x.png);
+    }
+    
+    #instagram a {
+    	background-image: url(instagram@3x.png);
+    }
+    
+    #dribbble a {
+    	background-image: url(dribbble@3x.png);
+    }
+
+    @media (max-width: 540px), (max-height: 512px) {
+
+	a span {
+		display: none;
+		padding: 0;
+	}
+	
+	li {
+		display: block;
+		float: left;
+		width: 25%;
+	}
+	
+	ul {
+		padding: 0 10%;
+	}
+
+}
+}
