@@ -2,19 +2,65 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+	</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js">
+	</script>
+	<script type="text/javascript" src="jquery.illuminate.0.7.min.js">
+	</script>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<title>Christopher L. Mathis</title>
 </head>
 <body>
 		 <h1>Christopher L. Mathis</h1>
 		<ul>
-			<li id="Resume"><a rel="me" href="https://twitter.com/maxvoltar"><span>Resume</span></a></li><i class="fa fa-book fa-3x"></i>
-			<li id="Bio"><a rel="me" href="https://maxvoltar.exposure.co"><span>Bio</span></a></li>
-			<li id="Contact"><a rel="me" href="http://instagram.com/maxvoltar/"><span>Contact</span></a></li>
-			<li id="FaceBook"><a rel="me" href="https://dribbble.com/maxvoltar"><span>FaceBook</span></a></li>
-			<li id="Press"><a rel="me" href="https://dribbble.com/maxvoltar"><span>Press</span></a></li>
+			<li class="social" id="Resume"> 
+				<a rel="me" href="">
+					<img src="img/application.png" class="img-zoom">
+					<span><font color="white">RESUME</font></span>
+				</a>
+			</li>
+			
+			<li class="social" id="Bio">
+				<a rel="me" href="">
+					<img src="img/bio.png" class="img-zoom">
+					<span><font color="white">BIO</font></span>
+				</a>
+			</li>
+			
+			<li class="social" id="Contact">
+				<a rel="me" href="">
+					<img src="img/contacts.png" class="img-zoom">
+					<span><font color="white">CONTACT</font></span>
+				</a>
+			</li>
+			
+			<li class="social" id="FaceBook">
+				<a rel="me" href="">
+					<img src="img/facebook.png" class="img-zoom">
+					<span><font color="white">SOCIAL</font></span>
+				</a>
+			</li>
+			
+			<li class="social" id="Press">
+				<a rel="me" href="">
+					<img src="img/newspaper.png" class="img-zoom">
+					<span><font color="white">PRESS</font></span>
+					<script>
+  						$(document).ready(function(){
+    					$('.img-zoom').hover(function() {
+        				$(this).addClass('transition');
+ 
+    				}, function() {
+        				$(this).removeClass('transition');
+    				});
+  });
+</script>
+				</a>
+			</li>
 		</ul>
+	<footer>
+		<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+	</footer>
 </body>
-
 </html>
